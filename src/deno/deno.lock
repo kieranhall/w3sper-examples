@@ -1,0 +1,24 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@dusk/exu@0.1.2": "0.1.2",
+    "jsr:@dusk/w3sper@0.1": "0.1.0"
+  },
+  "jsr": {
+    "@dusk/exu@0.1.2": {
+      "integrity": "3314d717176923e2cb931e73dcf3d729972fcffd45c4eb18b8acd19545d84d6f"
+    },
+    "@dusk/w3sper@0.1.0": {
+      "integrity": "b114f1e16ec4f929ddf9af3ee5e18570919337d8fe7884800f2cea1005a10e76",
+      "dependencies": [
+        "jsr:@dusk/exu"
+      ]
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@dusk/exu@0.1.2",
+      "jsr:@dusk/w3sper@0.1"
+    ]
+  }
+}

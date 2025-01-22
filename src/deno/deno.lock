@@ -2,7 +2,8 @@
   "version": "4",
   "specifiers": {
     "jsr:@dusk/exu@0.1.2": "0.1.2",
-    "jsr:@dusk/w3sper@0.1": "0.1.0"
+    "jsr:@dusk/w3sper@0.1": "0.1.0",
+    "npm:bip39@3.1.0": "3.1.0"
   },
   "jsr": {
     "@dusk/exu@0.1.2": {
@@ -12,6 +13,17 @@
       "integrity": "b114f1e16ec4f929ddf9af3ee5e18570919337d8fe7884800f2cea1005a10e76",
       "dependencies": [
         "jsr:@dusk/exu"
+      ]
+    }
+  },
+  "npm": {
+    "@noble/hashes@1.7.1": {
+      "integrity": "sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ=="
+    },
+    "bip39@3.1.0": {
+      "integrity": "sha512-c9kiwdk45Do5GL0vJMe7tS95VjCii65mYAH7DfWl3uW8AVzXKQVUm64i3hzVybBDMp9r7j9iNxR85+ul8MdN/A==",
+      "dependencies": [
+        "@noble/hashes"
       ]
     }
   },

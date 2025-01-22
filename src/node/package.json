@@ -1,0 +1,25 @@
+{
+	"name": "w3sper-examples",
+	"version": "0.1.0",
+	"description": "A collection of executable scripts that utilize Dusk's w3sper web SDK.",
+	"keywords": [
+		"dusk",
+		"w3sper",
+		"web3",
+		"blockchain"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kieranhall/w3sper-examples.git"
+	},
+	"license": "MPL-2.0",
+	"author": "Kieran Hall",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"@dusk/exu": "npm:@jsr/dusk__exu@^0.1.2",
+		"@dusk/w3sper": "npm:@jsr/dusk__w3sper"
+	}
+}

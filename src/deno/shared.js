@@ -1,10 +1,15 @@
-// Define a seed (you could also use a mnemonic library here)
-const SEED = new Uint8Array(64);
+import bip39 from "npm:bip39@3.1.0";
 
-// You could apply your own logic here (e.g. encryption / decryption)
-export const seeder = async () => SEED;
+// Generate a random mnemonic (uses crypto.randomBytes under the hood), defaults to 128-bits of entropy, then split this into an array of strings.
+const mnemonic = bip39.generateMnemonic();
 
-// TODO this should change to be useful for the user (e.g. import the wasm from the package)
+console.log({ mnemonic });
+
+// Generate 64 byte seed from the mnemonic.
+export const seeder = async () =>
+	Uint8Array.from(bip39.mnemonicToSeedSync(mnemonic));
+
+// See the README for information about obtaining the WebAssembly.
 const WASM_RELEASE_PATH = "../../bin/wallet_core.wasm";
 
 export function getLocalWasmBuffer() {

@@ -1,12 +1,6 @@
 {
-	"name": "w3sper-examples",
-	"version": "0.1.0",
 	"imports": {
 		"@dusk/exu": "jsr:@dusk/exu@0.1.2",
 		"@dusk/w3sper": "jsr:@dusk/w3sper@^0.1.0"
-	},
-	"publish": {
-		"include": ["LICENSE", "README.md", "src"],
-		"exclude": ["tests"]
 	}
 }

@@ -1,7 +1,9 @@
 import bip39 from "npm:bip39@3.1.0";
 
-// Generate a random mnemonic (uses crypto.randomBytes under the hood), defaults to 128-bits of entropy, then split this into an array of strings.
+// Generate a random mnemonic (uses crypto.randomBytes under the hood), defaults to 128-bits of entropy.
 const mnemonic = bip39.generateMnemonic();
+// To use a non-random mnemonic, adapt the code below and remove the line above.
+// const mnemonic = "put your mnemonic words here";
 
 console.log({ mnemonic });
 

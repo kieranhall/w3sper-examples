@@ -8,7 +8,7 @@ import {
 import { getLocalWasmBuffer, seeder } from "./shared.js";
 
 // We're using the network here to get the balance of the sender ("from" public key)
-const network = await Network.connect("https://nodes.dusk.network");
+const network = await Network.connect("https://testnet.nodes.dusk.network");
 
 // Example public key
 const from =
@@ -39,7 +39,7 @@ useAsProtocolDriver(
 				.amount(amount)
 				.to(to)
 				.nonce(balance.nonce + BigInt(nonce))
-				.chain(Network.LOCALNET)
+				.chain(Network.TESTNET) // valid networks: "LOCALNET", "MAINNET", "TESTNET", "DEVNET"
 				.gas({ limit: 500_000_000n })
 				.build()
 		)

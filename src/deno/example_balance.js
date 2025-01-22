@@ -1,7 +1,7 @@
 import { AccountSyncer, Network } from "@dusk/w3sper";
 
 // We're using the network here to get the balance of a public key
-const network = await Network.connect("https://nodes.dusk.network");
+const network = await Network.connect("https://testnet.nodes.dusk.network");
 
 // Example public key
 const publicKey =
